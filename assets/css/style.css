@@ -1,0 +1,49 @@
+body {
+    background-image: url("../images/homeBackground.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+    color: lightcoral;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    background-color: rgb(32, 32, 32);
+    display: block;
+    margin: 3%;
+    padding: 1%;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+
+.navbar {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 1.5em;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
+}
+
+.navbar li {
+    padding: 0.4em;
+    margin: 0.1em;
+    font-weight: bold;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar a:visited {
+    color: lightcoral;
+}
+
+.navbar a:hover {
+    color: coral;
+}
