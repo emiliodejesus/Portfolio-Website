@@ -1,9 +1,11 @@
 body {
+    margin: 0;
+    padding: 0;
     background-image: url("../images/homeBackground.png");
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: vertical;
     font-family: 'Courier New', Courier, monospace;
-    color: lightcoral;
+    color: whitesmoke;
 }
 
 a {
@@ -22,7 +24,18 @@ a {
     -o-border-radius: 0.5em;
 }
 
+
 .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: whitesmoke;
     color: black;
     border-radius: 1.5em;
@@ -30,20 +43,43 @@ a {
     -moz-border-radius: 1.5em;
     -ms-border-radius: 1.5em;
     -o-border-radius: 1.5em;
+    height: 100%;
+    width: 60%;
 }
 
-.navbar li {
-    padding: 0.4em;
-    margin: 0.1em;
+.navbar ul li {
+    padding: 0.2em;
+    margin: 0.1em 4%;
     font-weight: bold;
     list-style-type: none;
-    display: inline-block;
+}
+
+.navbar a {
+    color: black;
 }
 
 .navbar a:visited {
-    color: lightcoral;
+    color: black;
 }
 
 .navbar a:hover {
     color: coral;
 }
+
+.file a {
+    background-color: whitesmoke;
+    border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -ms-border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    color: black;
+    padding: 0.6em;
+    margin: 0.1em;
+}
+
+.file a:hover {
+    color: coral;
+}
+
+
