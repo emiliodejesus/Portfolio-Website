@@ -1,27 +1,40 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Helvetica Neue",sans-serif;
+    color: whitesmoke;
+}
+
+body.home {
     background-image: url("../images/homeBackground.png");
     background-size: 100%;
     background-repeat: vertical;
-    font-family: 'Courier New', Courier, monospace;
-    color: whitesmoke;
+}
+
+body.projects {
+    background-image: url("../images/imax.png");
 }
 
 a {
     text-decoration: none;
 }
 
-.content {
-    background-color: rgb(32, 32, 32);
+.main-block {
+    background-color: black;
+    opacity: 0.9;
     display: block;
-    margin: 3%;
-    padding: 1%;
+    margin: 3em;
+    padding: 0.5em;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
     -ms-border-radius: 0.5em;
     -o-border-radius: 0.5em;
+}
+
+.main-block .introduction {
+    margin: 0 1em 1em 1em;
+    padding: 0 1em 1em 1em;
 }
 
 
@@ -30,40 +43,32 @@ a {
     align-items: center;
     justify-content: center;
     max-width: 100%;
-}
-
-.navbar ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: whitesmoke;
-    color: black;
-    border-radius: 1.5em;
-    -webkit-border-radius: 1.5em;
-    -moz-border-radius: 1.5em;
-    -ms-border-radius: 1.5em;
-    -o-border-radius: 1.5em;
-    height: 100%;
-    width: 60%;
-}
-
-.navbar ul li {
-    padding: 0.2em;
-    margin: 0.1em 4%;
-    font-weight: bold;
-    list-style-type: none;
+    background-color: black;
+    overflow: hidden;
 }
 
 .navbar a {
-    color: black;
+    padding: 1em 2em;
+    font-weight: bold;
+    list-style-type: none;
+    color: whitesmoke
 }
 
-.navbar a:visited {
-    color: black;
+.navbar a, a:visited {
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: large;
 }
+
 
 .navbar a:hover {
-    color: coral;
+    color: rgb(239, 147, 147);
+    border-bottom: 0.3em solid rgb(239, 147, 147);
+}
+
+.navbar a.active {
+    color: lightcoral;
+    border-bottom: 0.3em solid lightcoral;
 }
 
 .file a {
