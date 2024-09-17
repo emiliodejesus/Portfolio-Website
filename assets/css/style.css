@@ -1,7 +1,12 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font: normal 1em "Helvetica Neue",sans-serif;
+    line-height: 1.6em;
     color: whitesmoke;
 }
 
@@ -9,22 +14,35 @@ body.home {
     background-image: url("../images/homeBackground.png");
     background-size: 100%;
     background-repeat: vertical;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body.projects {
     background-image: url("../images/imax.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    margin: 0.2em 0.1em;
+    padding: 0.4em 0.2em;
 }
 
 a {
     text-decoration: none;
 }
 
-.main-block {
+main {
     background-color: black;
     opacity: 0.9;
     display: block;
     margin: 3em;
-    padding: 0.5em;
+    padding: 1%;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
@@ -32,13 +50,13 @@ a {
     -o-border-radius: 0.5em;
 }
 
-.main-block .introduction {
+main .introduction {
     margin: 0 1em 1em 1em;
     padding: 0 1em 1em 1em;
 }
 
 
-.navbar {
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,26 +65,26 @@ a {
     overflow: hidden;
 }
 
-.navbar a {
-    padding: 1em 2em;
+nav a {
+    padding: 1em 3.5%;
     font-weight: bold;
     list-style-type: none;
-    color: whitesmoke
+    color: whitesmoke;
 }
 
-.navbar a, a:visited {
+nav a, nav a:visited {
     color: whitesmoke;
     font-weight: bolder;
     font-size: large;
 }
 
 
-.navbar a:hover {
+nav a:hover {
     color: rgb(239, 147, 147);
     border-bottom: 0.3em solid rgb(239, 147, 147);
 }
 
-.navbar a.active {
+nav a.active {
     color: lightcoral;
     border-bottom: 0.3em solid lightcoral;
 }
